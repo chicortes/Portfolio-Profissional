@@ -1,0 +1,9 @@
+/* Section: título, texto de abertura e espaçamento de cada seção */
+main > section { padding: 4.5rem 0 1rem; }
+main > section > h2 {
+  font-size: clamp(1rem, 3.6vw, 1.6rem); line-height: 1.4; margin: 0 0 1.8rem;
+  color: var(--yel); text-shadow: 3px 3px 0 var(--mag);
+}
+main > section > h2::before { content: "▶ "; color: var(--yel); }
+.lead { color: var(--mut); max-width: 60ch; margin: -0.6rem 0 1.6rem; }
+.wip { font: 0.7rem/2 var(--pixel); color: var(--mut); padding: 2rem; border: 3px dashed var(--dim); }

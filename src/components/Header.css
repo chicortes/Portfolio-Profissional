@@ -1,0 +1,19 @@
+/* Header: barra fixa no topo com o menu e o seletor de idioma */
+#header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: var(--bg); border-bottom: 4px solid var(--cy); }
+.bar { max-width: 1040px; margin: auto; padding: 0.7rem 1.2rem; display: flex; gap: 0.8rem 1.4rem; align-items: center; flex-wrap: wrap; }
+.up { color: var(--yel); font-size: 0.7rem; text-decoration: none; }
+#header nav { display: flex; gap: 0.4rem 1rem; flex: 1; flex-wrap: wrap; }
+#header nav a { font: 0.55rem var(--pixel); color: var(--ink); text-decoration: none; padding: 0.4rem 0; white-space: nowrap; }
+#header nav a:hover, #header nav a.on { color: var(--yel); }
+#header nav a.on::before { content: "▶ "; }
+.tools { display: flex; gap: 0.4rem; }
+.tools button { font: 0.6rem var(--pixel); background: var(--panel); color: var(--ink); border: 3px solid var(--cy); padding: 0.45rem 0.6rem; cursor: pointer; }
+.tools button[aria-pressed="true"] { background: var(--cy); color: var(--bg); }
+@media (max-width: 700px) {
+  #header nav {
+    order: 3; flex: 1 1 100%; flex-wrap: nowrap; overflow-x: auto; gap: 1.3rem; scrollbar-width: none;
+    -webkit-mask: linear-gradient(90deg, #000 85%, #0000);
+  }
+  #header nav::-webkit-scrollbar { display: none; }
+  .tools { margin-left: auto; }
+}

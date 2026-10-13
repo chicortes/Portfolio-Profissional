@@ -1,0 +1,93 @@
+/* =========================================================
+   App.css: estilos globais (cores, fontes, botões, cards).
+   Cada componente tem o próprio CSS em src/components.
+   Paleta: roxo de fliperama + amarelo de ficha.
+   Fontes: Press Start 2P (títulos) e VT323 (texto).
+   ========================================================= */
+:root {
+  --bg: #140b26;     /* fundo */
+  --panel: #1f1340;  /* cards */
+  --ink: #efeaff;    /* texto */
+  --mut: #b0a3d6;    /* texto secundário */
+  --mag: #080412;    /* sombra pixelada */
+  --cy: #a992e8;     /* lilás: bordas e links */
+  --yel: #f0c05a;    /* amarelo: destaque */
+  --dim: #33235c;    /* trilhos e barras vazias */
+  --err: #ff8a8a;    /* erros */
+  --pixel: "Press Start 2P", monospace;
+  color-scheme: dark;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-padding-top: calc(90px + env(safe-area-inset-top, 0px)); scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg) radial-gradient(#ffffff22 1px, transparent 1.5px) 0 0 / 38px 38px;
+  color: var(--ink);
+  font: 400 1.4rem/1.35 VT323, ui-monospace, monospace;
+  -webkit-text-size-adjust: 100%;
+}
+/* linhas de TV de tubo por cima de tudo */
+body::after {
+  content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50;
+  background: repeating-linear-gradient(0deg, #0000002e 0 1px, transparent 1px 3px);
+}
+h1, h2, h3, .px { font-family: var(--pixel); font-weight: 400; }
+p { margin: 0 0 1rem; }
+img { max-width: 100%; }
+a { color: var(--cy); }
+a:hover { color: var(--yel); }
+:focus-visible { outline: 4px solid var(--yel); outline-offset: 3px; }
+main:focus { outline: none; }
+[hidden] { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.muted { color: var(--mut); }
+.mini { font-size: 0.6rem; color: var(--yel); margin: 0 0 0.8rem; }
+.links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin: 0; }
+
+.skiplink {
+  position: absolute; left: 1rem; top: -200px; z-index: 300;
+  background: var(--yel); color: var(--bg); font: 0.6rem var(--pixel); padding: 0.9rem 1rem; text-decoration: none;
+}
+.skiplink:focus { top: calc(1rem + env(safe-area-inset-top, 0px)); }
+
+main { max-width: 1040px; margin: auto; padding: 0 1.2rem; }
+
+/* ---------- botões ---------- */
+.btn {
+  display: inline-block; font: 0.8rem var(--pixel); background: var(--yel); color: var(--bg);
+  padding: 1rem 1.3rem; text-decoration: none; border: 4px solid #fff; box-shadow: 6px 6px 0 var(--mag);
+  margin-top: 0.8rem; cursor: pointer;
+}
+.btn:hover { background: #fff; color: var(--bg); }
+.btn:active { transform: translate(3px, 3px); box-shadow: 3px 3px 0 var(--mag); }
+.btn.sm { font-size: 0.6rem; padding: 0.8rem 1rem; border-width: 3px; box-shadow: 4px 4px 0 var(--mag); }
+
+/* ---------- cards ---------- */
+.card { background: var(--panel); border: 4px solid var(--cy); box-shadow: 6px 6px 0 var(--mag); }
+.card .tt {
+  background: var(--cy); color: var(--bg); font: 0.6rem/1.6 var(--pixel); padding: 0.5rem 0.8rem;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.2rem 1rem;
+}
+.card .b { padding: 1rem 1.2rem; }
+.card h3 { font-size: 0.85rem; line-height: 1.5; margin: 0 0 0.5rem; color: var(--yel); }
+.tags { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; padding: 0; margin: 0.6rem 0 0.9rem; }
+.tags li { border: 2px solid var(--cy); color: var(--cy); padding: 0 0.5rem; font-size: 1.15rem; }
+
+.blink { animation: blink 1s steps(2) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ---------- bloqueio até apertar START ---------- */
+body.locked main > section:not(.hero),
+body.locked #footer { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  body:not(.locked) main > section:not(.hero) { animation: appear 0.6s steps(6); }
+}
+@keyframes appear { from { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .blink { animation: none; }
+}

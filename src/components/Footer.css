@@ -1,0 +1,5 @@
+/* Footer */
+#footer { margin-top: 4rem; border-top: 4px solid var(--cy); background: var(--bg); position: relative; z-index: 1; }
+.foot { justify-content: space-between; padding-top: 1.4rem; padding-bottom: 1.6rem; color: var(--mut); }
+.foot p { margin: 0; }
+.top { font-size: 0.6rem; color: var(--yel); text-decoration: none; }
