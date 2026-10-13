@@ -10,8 +10,17 @@ import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import Footer from "./components/Footer.jsx";
 import Intro from "./components/Intro.jsx";
+import SobreMim from "./components/SobreMim.jsx";
+import Projetos from "./components/Projetos.jsx";
+import Experiencias from "./components/Experiencias.jsx";
+import Contato from "./components/Contato.jsx";
 
+// Componente de cada seção. Seção sem componente aparece como "EM CONSTRUÇÃO".
 const COMPONENTS = {
+  sobre: SobreMim,
+  projetos: Projetos,
+  experiencias: Experiencias,
+  contato: Contato,
 };
 
 // Seções que dependem de configuração somem quando ela está vazia

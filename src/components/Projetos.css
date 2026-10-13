@@ -1,0 +1,26 @@
+/* Projetos: linha do tempo */
+.tl { list-style: none; margin: 0; padding: 0 0 0 2.2rem; border-left: 4px dotted var(--cy); }
+.tl > li { position: relative; margin-bottom: 1.6rem; }
+.tl > li::before { content: ""; position: absolute; left: calc(-2.2rem - 10px); top: 1.2rem; width: 16px; height: 16px; background: var(--yel); }
+.tl > li.last::before { background: #fff; box-shadow: 0 0 0 4px var(--yel); }
+.proj {
+  background: var(--panel); border: 4px solid var(--cy); box-shadow: 6px 6px 0 var(--mag); padding: 1.1rem 1.3rem;
+  display: grid; grid-template-columns: minmax(0, 260px) minmax(0, 1fr); gap: 1.3rem; align-items: start;
+}
+.thumb {
+  position: relative; display: grid; place-items: center; aspect-ratio: 16 / 10; overflow: hidden; border: 3px solid var(--dim);
+  background: repeating-conic-gradient(#241747 0 25%, #190f33 0 50%) 0 0 / 20px 20px;
+}
+.thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.thumb .ph { font: 0.6rem/1.7 var(--pixel); color: var(--mut); text-align: center; padding: 0.8rem; text-shadow: 2px 2px 0 var(--mag); }
+.pinfo > p { margin: 0 0 0.6rem; }
+.pinfo > p:last-child { margin: 0; }
+.stage { font: 0.55rem/1.8 var(--pixel); color: var(--cy); }
+.stage time { color: var(--mut); margin-left: 0.8rem; }
+.proj h3 { font-size: 0.85rem; line-height: 1.5; margin: 0 0 0.5rem; color: var(--yel); }
+.ptech { color: var(--cy); }
+@media (max-width: 640px) {
+  .proj { grid-template-columns: 1fr; }
+  .tl { padding-left: 1.6rem; }
+  .tl > li::before { left: calc(-1.6rem - 10px); }
+}

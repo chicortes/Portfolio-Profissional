@@ -41,7 +41,7 @@ Website de portfólio profissional de **Francisco de Castro Côrtes Netto**, est
 
 ## 🎨 Protótipos (Figma)
 
-Wireframes de média fidelidade feitos no Figma: [abrir o protótipo]().
+Wireframes de média fidelidade feitos no Figma: [abrir o protótipo](https://height-teal-71934295.figma.site).
 ---
 
 ## 🔧 Como Executar
