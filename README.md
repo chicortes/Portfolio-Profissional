@@ -384,15 +384,15 @@ npm run preview
 | Tela | Captura de Tela |
 | :---: | :---: |
 | **Intro (Fliperama)** | **Sobre Mim** |
-| <img src="docs/screenshots/intro.gif" alt="Intro do fliperama" width="360px"> | <img src="docs/screenshots/sobre.png" alt="Seção Sobre Mim" width="360px"> |
+| <img src="public/img/screenshots/intro.gif" alt="Intro do fliperama" width="360px"> | <img src="public/img/screenshots/sobre.png" alt="Seção Sobre Mim" width="360px"> |
 | **Projetos (Linha do Tempo)** | **Experiências** |
-| <img src="docs/screenshots/projetos.png" alt="Linha do tempo de projetos" width="360px"> | <img src="docs/screenshots/experiencias.png" alt="Seção Experiências" width="360px"> |
+| <img src="public/img/screenshots/projetos.png" alt="Linha do tempo de projetos" width="360px"> | <img src="public/img/screenshots/experiencias.png" alt="Seção Experiências" width="360px"> |
 | **Placar do GitHub** | **Spotify** |
-| <img src="docs/screenshots/github.png" alt="Placar do GitHub" width="360px"> | <img src="docs/screenshots/spotify.png" alt="Player do Spotify" width="360px"> |
+| <img src="public/img/screenshots/github.png" alt="Placar do GitHub" width="360px"> | <img src="public/img/screenshots/spotify.png" alt="Player do Spotify" width="360px"> |
 | **Botão do Galo** | **Flappy Plane** |
-| <img src="docs/screenshots/galo.png" alt="Botão do Galo" width="360px"> | <img src="docs/screenshots/jogos.png" alt="Jogo Flappy Plane" width="360px"> |
+| <img src="public/img/screenshots/galo.png" alt="Botão do Galo" width="360px"> | <img src="public/img/screenshots/jogos.png" alt="Jogo Flappy Plane" width="360px"> |
 | **Contato e Formulário** |
-| <img src="docs/screenshots/contato.png" alt="Seção de contato" width="360px"> |
+| <img src="public/img/screenshots/contato.png" alt="Seção de contato" width="360px"> |
 
 ### 💻 Exemplo de Saída no Terminal
 
