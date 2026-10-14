@@ -61,7 +61,7 @@
 ---
 
 ## 🔗 Links Úteis
-* 🌐 **Demo Online:** [Acesse a Aplicação Web](https://https://portfolio-profissional-fracortes-hw98v8o31-chicortes.vercel.app)
+* 🌐 **Demo Online:** [Acesse a Aplicação Web](https://portfolio-profissional-fracortes.vercel.app)
   > 💻 **Descrição:** Site em produção, hospedado na Vercel. Use `?lang=en` no fim do endereço para abrir em inglês.
 * 📱 **Download Mobile:** Não se aplica.
   > 📱 **Descrição:** O projeto é um site responsivo; no celular ele é acessado pelo navegador.
