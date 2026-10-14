@@ -27,7 +27,7 @@
 
 [![Versão](https://img.shields.io/badge/Versão-v1.0.0-blue)](https://github.com/chicortes/Portfolio-Profissional/releases)
 [![Licença](https://img.shields.io/github/license/chicortes/Portfolio-Profissional)](#-licença)
-[![Deploy](https://img.shields.io/badge/Deploy-Vercel-black)](https://portfolio-profissional-fracortes-hw98v8o31-chicortes.vercel.app)
+[![Deploy](https://img.shields.io/badge/Deploy-Vercel-black)](https://portfolio-profissional-fracortes.vercel.app)
 
 [![Versão](https://img.shields.io/badge/Versão-v1.0.0-blue?style=for-the-badge)](https://github.com/chicortes/Portfolio-Profissional/releases) ![HTML5](https://img.shields.io/badge/HTML5-007ec6?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-007ec6?style=for-the-badge&logo=css&logoColor=white) ![React](https://img.shields.io/badge/React-19-007ec6?style=for-the-badge&logo=react&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-ES2022-007ec6?style=for-the-badge&logo=javascript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-7-007ec6?style=for-the-badge&logo=vite&logoColor=white) ![EmailJS](https://img.shields.io/badge/EmailJS-REST_API-007ec6?style=for-the-badge&logo=maildotru&logoColor=white) ![GitHub API](https://img.shields.io/badge/GitHub-REST_API-007ec6?style=for-the-badge&logo=github&logoColor=white) ![Spotify](https://img.shields.io/badge/Spotify-Embed-007ec6?style=for-the-badge&logo=spotify&logoColor=white) ![GitHub repo size](https://img.shields.io/github/repo-size/chicortes/Portfolio-Profissional?style=for-the-badge&logo=files) ![GitHub language count](https://img.shields.io/github/languages/count/chicortes/Portfolio-Profissional?style=for-the-badge&logo=javascript) ![GitHub license](https://img.shields.io/github/license/chicortes/Portfolio-Profissional?style=for-the-badge&color=007ec6&logo=opensourceinitiative) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/chicortes/Portfolio-Profissional?style=for-the-badge&color=007ec6&logo=gitkraken) ![GitHub last commit](https://img.shields.io/github/last-commit/chicortes/Portfolio-Profissional?style=for-the-badge&logo=clockify) ![Vercel](https://vercelbadge.vercel.app/api/chicortes/Portfolio-Profissional?style=for-the-badge)
 
@@ -62,7 +62,6 @@
 
 ## 🔗 Links Úteis
 * 🌐 **Demo Online:** [Acesse a Aplicação Web](https://portfolio-profissional-fracortes.vercel.app)
-  > 💻 **Descrição:** Site em produção, hospedado na Vercel. Use `?lang=en` no fim do endereço para abrir em inglês.
 * 📱 **Download Mobile:** Não se aplica.
   > 📱 **Descrição:** O projeto é um site responsivo; no celular ele é acessado pelo navegador.
 * 📖 **Documentação:** [Protótipo no Figma](https://height-teal-71934295.figma.site)
