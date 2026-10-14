@@ -17,7 +17,7 @@ export const PROJECTS = [
     tech: ["Java 21", "Spring Boot", "Maven", "REST", "Open-Meteo"],
     repo: GH + "DIAW-At01",
     demo: "",
-    img: "/img/projetos/Apirest.png",
+    img: "/img/projetos/apirest.png",
     pt: "API REST em Spring Boot que consulta o Open-Meteo e devolve o clima atual e a previsão dos próximos dias de Belo Horizonte no endpoint /climaBH. Feita em dupla.",
     en: "Spring Boot REST API that queries Open-Meteo and returns Belo Horizonte's current weather and forecast at the /climaBH endpoint. Built in a pair.",
   },
