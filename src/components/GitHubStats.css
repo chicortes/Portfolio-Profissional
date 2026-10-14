@@ -1,0 +1,18 @@
+/* GitHubStats: placar do GitHub */
+.gh{display:grid;gap:1.8rem;grid-template-columns:minmax(0,1fr)}
+.gh-msg{color:var(--mut)}
+.gh-score{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin:0}
+.gh-score>div{padding:1rem 1.1rem;border-right:3px dashed var(--dim);border-bottom:3px dashed var(--dim)}
+.gh-score dt{font:.5rem/1.8 var(--pixel);color:var(--mut)}
+.gh-score dd{margin:.3rem 0 0;font:1.3rem var(--pixel);color:var(--yel);text-shadow:3px 3px 0 var(--mag)}
+.gh-score dd small{font-size:.5rem;color:var(--mut);text-shadow:none}
+.gh-bar{display:flex;height:22px;border:3px solid var(--cy);background:var(--dim)}
+.gh-bar span{min-width:4px}
+.gh-langs{list-style:none;padding:0;margin:.7rem 0 0;display:flex;flex-wrap:wrap;gap:.3rem 1.2rem}
+.gh-langs i,.gh-legend i{display:inline-block;width:12px;height:12px;margin-right:.4rem;vertical-align:-1px}
+.gh-langs small{color:var(--mut)}
+.gh-cal{overflow-x:auto;padding:.8rem;background:var(--panel);border:4px solid var(--cy);box-shadow:6px 6px 0 var(--mag)}
+.gh-cal svg{display:block;width:100%;height:auto;min-width:560px}
+.gh-legend{display:flex;align-items:center;gap:.25rem;justify-content:flex-end;color:var(--mut);font-size:1.1rem;margin:.6rem 0 0}
+.gh-legend i{margin:0}
+

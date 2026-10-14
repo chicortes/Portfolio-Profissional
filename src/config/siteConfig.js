@@ -10,7 +10,7 @@ const SITE_CONFIG = {
 
   links: {
     email: "franettocortes@gmail.com", 
-    linkedin: "https://www.linkedin.com/in/seu-usuario",
+    linkedin: "https://www.linkedin.com/in/francisco-netto-aa8497439",
     github: "https://github.com/chicortes",
     instagram: "fracortes25_",
   },

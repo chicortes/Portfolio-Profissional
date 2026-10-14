@@ -12,15 +12,21 @@ import Footer from "./components/Footer.jsx";
 import Intro from "./components/Intro.jsx";
 import SobreMim from "./components/SobreMim.jsx";
 import Projetos from "./components/Projetos.jsx";
+import GitHubStats from "./components/GitHubStats.jsx";
 import Experiencias from "./components/Experiencias.jsx";
+import Spotify from "./components/Spotify.jsx";
 import Contato from "./components/Contato.jsx";
+import FlappyPlaneGame from "./components/FlappyPlaneGame.jsx";
 
 // Componente de cada seção. Seção sem componente aparece como "EM CONSTRUÇÃO".
 const COMPONENTS = {
   sobre: SobreMim,
   projetos: Projetos,
+  github: GitHubStats,
   experiencias: Experiencias,
+  spotify: Spotify,
   contato: Contato,
+  jogos: FlappyPlaneGame,
 };
 
 // Seções que dependem de configuração somem quando ela está vazia

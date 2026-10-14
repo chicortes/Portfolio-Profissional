@@ -1,4 +1,4 @@
-// SobreMim: avatar (PLAYER 1), atributos, apresentação em
+// SobreMim: avatar (PLAYER 1), atributos, botão do Galo, apresentação em
 // PT/EN e ficha com formação, área, interesses e objetivo.
 import { useState } from "react";
 import SITE_CONFIG from "../config/siteConfig.js";
@@ -6,6 +6,7 @@ import { ABOUT } from "../data/aboutData.js";
 import { SKILLS } from "../data/skillsData.js";
 import { useLang } from "../context/LanguageContext.jsx";
 import { pad } from "../lib/format.js";
+import { GaloButton, GaloPanel } from "./Galo.jsx";
 import "./SobreMim.css";
 
 const T = {
@@ -19,6 +20,7 @@ export default function SobreMim() {
   const { lang } = useLang();
   const t = T[lang], A = ABOUT[lang];
   const [photoOk, setPhotoOk] = useState(Boolean(SITE_CONFIG.avatar));
+  const [galoOpen, setGaloOpen] = useState(false);
   const cv = SITE_CONFIG.cv[lang] || SITE_CONFIG.cv.pt;
 
   return (
@@ -46,6 +48,7 @@ export default function SobreMim() {
               ))}
             </div>
           </div>
+          <div id="galo-slot"><GaloButton open={galoOpen} onToggle={() => setGaloOpen((o) => !o)} /></div>
         </div>
         <div className="about">
           {A.paragraphs.map((p, i) => <p key={i}>{p}</p>)}
@@ -55,6 +58,7 @@ export default function SobreMim() {
           {cv && <a className="btn sm" href={cv} download><span aria-hidden="true">▼</span> {t.cv}</a>}
         </div>
       </div>
+      <GaloPanel open={galoOpen} />
     </>
   );
 }

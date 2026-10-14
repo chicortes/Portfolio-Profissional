@@ -1,0 +1,29 @@
+/* Galo: botão "MEU TIME" e painel com o calendário do Atlético */
+.galo {
+  display: flex; align-items: center; gap: 0.8rem; width: 100%; padding: 0.55rem 0.8rem; cursor: pointer;
+  font: 0.6rem var(--pixel); color: #111; border: 4px solid #111; box-shadow: 6px 6px 0 var(--mag);
+  background: repeating-linear-gradient(90deg, #fff 0 8px, #e6e6e6 8px 16px);
+}
+.galo:hover { background: #fff; }
+.galo[aria-expanded="true"] { background: #111; color: #fff; }
+.galo[aria-expanded="true"] .galo-icon { background: #fff; }
+.galo-icon { display: grid; place-items: center; padding: 2px; line-height: 0; }
+.galo-icon[data-cheer] { animation: cheer 0.5s steps(4); }
+@keyframes cheer { 25% { transform: translateY(-6px) rotate(-8deg); } 75% { transform: translateY(-6px) rotate(8deg); } }
+.galo-panel { margin-top: 2rem; }
+.galo-msg {
+  display: inline-block; margin: 0 0 1.2rem; padding: 0.9rem 1rem 1.2rem; position: relative;
+  background: #fff; color: #111; border: 4px solid #111; box-shadow: 6px 6px 0 var(--mag); font: 0.65rem/1.9 var(--pixel);
+}
+.galo-msg::after { content: ""; position: absolute; inset: auto 0 0 0; height: 6px; background: repeating-linear-gradient(90deg, #111 0 6px, #fff 6px 12px); }
+.matches { list-style: none; margin: 0; padding: 0; }
+.matches li { padding: 0.7rem 0; border-bottom: 2px dashed var(--dim); }
+.matches li:first-child { padding-top: 0; }
+.matches p, .galo-last p { margin: 0; }
+.when { font: 0.55rem/1.9 var(--pixel); color: var(--yel); }
+.teams { font-size: 1.6rem; }
+.teams .us { color: var(--yel); }
+.teams .x { color: var(--mut); margin: 0 0.3rem; }
+.galo-last { margin-top: 1.2rem; }
+.galo-cal .links { margin-top: 1rem; }
+@media (prefers-reduced-motion: reduce) { .galo-icon[data-cheer] { animation: none; } }

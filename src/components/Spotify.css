@@ -1,0 +1,31 @@
+/* Spotify */
+.spotify-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+.spotify {
+  display: block;
+  width: 100%;
+  height: 360px;
+  box-sizing: border-box;
+  border: 4px solid var(--cy);
+  box-shadow: 6px 6px 0 var(--mag);
+  background: #121212;
+}
+.spotify-side {
+  min-height: 360px;
+  box-sizing: border-box;
+  padding: 1.2rem;
+  border: 4px dashed var(--cy);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.spotify-side p { margin: 0; }
+@media (max-width: 800px) {
+  .spotify-wrap { grid-template-columns: 1fr; }
+  .spotify-side { min-height: 0; }
+}
