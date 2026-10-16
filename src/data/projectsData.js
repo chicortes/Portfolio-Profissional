@@ -12,6 +12,16 @@ export const PROJECTS = [
     en: "Web development assignment: a store whose product cards are built with JavaScript from data, plus a detail view for each item.",
   },
   {
+    name: "Blackjack",
+    date: "2026-05",
+    tech: ["Python", "Pygame"],
+    repo: "https://github.com/bernardorf5/BlackJack-PUC",
+    demo: "",
+    img: "/img/projetos/blackjack.png",
+    pt: "BlackJack - PUC é uma simulação do clássico jogo de cartas Blackjack (21). O jogador enfrenta um dealer controlado pelo computador, recebendo cartas de um baralho padrão de 52 cartas. A cada rodada, o jogador decide se pede mais uma carta (Hit) ou para de comprar (Stand), tentando chegar o mais perto possível de 21 pontos sem ultrapassar esse valor. O progresso é medido pelo saldo de fichas, que aumenta com vitórias e diminui com derrotas. O jogo encerra quando o saldo chega a zero.",
+    en: "BlackJack - PUC is a simulation of the classic card game Blackjack (21). The player faces a computer-controlled dealer, receiving cards from a standard 52-card deck. Each round, the player decides whether to take another card (Hit) or stop drawing (Stand), attempting to get as close to 21 points as possible without going bust. Progress is tracked through a chip balance, which increases with wins and decreases with losses. The game ends when the balance reaches zero.",
+  },
+  {
     name: "API Clima BH",
     date: "2026-08",
     tech: ["Java 21", "Spring Boot", "Maven", "REST", "Open-Meteo"],

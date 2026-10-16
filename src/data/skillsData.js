@@ -6,5 +6,5 @@ export const SKILLS = [
   ["Java", 2],
   ["Spring Boot", 2],
   ["Git", 3],
-  ["SQL", 2],
+  ["Python", 4],
 ];
